@@ -285,4 +285,14 @@ body{
     .space-between-right{
         display:none;
     }
+    .thumbnail-row .video-duration{
+        font-size: 10px;
+    }
+    .video-preview .video-info{
+        font-size:12px;
+    }
+    .wrapper .main_content .header{
+        font-size:15px;
+    }
+    
 }
