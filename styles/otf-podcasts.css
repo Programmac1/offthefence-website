@@ -78,19 +78,93 @@ body{
    width: 170px;
 }
 
+.space-between{
+    width:260px;
+}
+
+.hamburger{
+    padding-top:15px;
+    position:relative;
+    display:block;
+    width:35px;
+    cursor:pointer;
+    height:35px;
+    appearance:none;
+    background: none;
+    outline:none;
+    border:none;
+}
+
+.hamburger .bar, .hamburger:before, .hamburger:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition:0.4s;
+}
+
+.hamburger.is-active:before{
+    transform:rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after{
+    transform:rotate(45deg) translate(-10px, -8px);
+}
+
+.hamburger.is-active .bar{
+    opacity:0;
+}
+
+.mobile-nav{
+    display:block;
+    position:fixed;
+    top:0;
+    left:100%;
+    width:100%;
+    min-height:100vh;
+    z-index:98;
+    background-color: /*#38B6FF;*/ rgb(196, 197, 200);
+    padding-top:120px;
+    opacity:97%;
+}
+
+.mobile-nav.is-active{
+    left:0;
+    transition:0.4s;
+}
+
+.mobile-nav a{
+    display:block;
+    width:100%;
+    max-width:200px;
+    margin: 0 auto 16px;
+    text-align:center;
+    margin-bottom:16px;
+    padding:12px;
+    background-color: #38B6FF;
+    text-decoration:none;
+    color:white;
+}
+
+.mobile-nav a:hover{
+    background-color: rgb(138, 169, 180);;
+}
+
 /*.navbar .social-icon-block{
    width:60px;
    display:none;
 }*/
 
-.navbar .social-blocks-content{
+/*.navbar .social-blocks-content{
     display:block;
     color:white;
     text-align: center;
     text-decoration:none;
     height:70px;
     padding-top:25px;
-}
+}*/
 
 .wrapper .main_content{
     width:100%;
@@ -183,4 +257,32 @@ body{
 .social-media-block .social-media-icons .fa-brands:hover{
     background-color:rgb(133, 135, 138);
     color:#38B6FF;
+}
+
+@media (min-width: 767px){
+    .mobile-nav{
+        display:none;
+    }
+    .hamburger{
+        display:none;
+    }
+    .space-between{
+        display:none;
+    }
+}
+
+@media (max-width: 767px){
+
+    .navbar-blocks{
+        display:none;
+    }
+    .navbar-blocks-content{
+        display:none;
+    }
+    .space-between-left{
+        display:none;
+    }
+    .space-between-right{
+        display:none;
+    }
 }

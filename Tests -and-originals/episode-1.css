@@ -17,14 +17,14 @@ body{
 }
 
 .wrapper{
-    position:relative;
     display:flex;
-  
+    position:relative;
 }
 
 .nav-wrap{
     width:100%;
     position:fixed;
+    z-index:100;
 }
 
 .navbar{
@@ -92,135 +92,123 @@ body{
     padding-top:25px;
 }
 
-/*.navbar .social-blocks-content .fa-brands:hover{
-    background-color: #38B6FF;
-    color:grey;
-}*/
 
 .wrapper .main_content{
     width:100%;
-    padding-top:70px;
-    /*padding-left:200px;*/
-    /*padding-top:100px;*/
+    padding-top:100px;
 }
 
 .wrapper .main_content .header {
-    padding-top:55px;
-    padding-bottom:55px;
-    /*padding-left:20px;*/
+    padding-top:10;
+    padding-left:20px;
     background:#fff;
    
     border-bottom: 1px solid #e0e4e8;
     font-weight: bold;
     text-align:center;
-
+    
     color:black;
 
-    /*font-size:35px;*/
-    font-size:25px;
+    font-size:22px;
 }
 
 .wrapper .main_content .grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
     column-gap:16px;
-    row-gap:20px;
-    padding-top:20px;
+    row-gap:40px;
+    padding-left:20px;
+    padding-top:40px;
 }
 
-.main_content .intro{
-    display:block;
+.grid .video-preview{
+    margin-right:50px;
 }
 
-.main_content .intro h2{
-    /*font-size:35px;*/
-    font-size:25px;
-    text-align:center;
+.video-preview .thumbnail-row{
+    position:relative;
+    /*min-width:550px;*/
+    display:flex;
+}
+
+.thumbnail-row .thumbnail{
+    width:100%;
+}
+
+.thumbnail-row .video-duration{
+    position:absolute;
+    bottom:8px;
+    font-weight:500;
+    background-color: black;
+    color:white;
+    border-radius:2px;
+    padding:4px;
+    font-size:17px;
+    right:5px;
+}
+
+.video-preview .video-info{
+    color:black;
+    border-radius:2px;
+    padding:4px;
+    font-size:19px;
+    right:5px;
+    font-weight:500;
+}
+
+.grid .episode-description{
+    text-align: left;
+    margin-left:50px;
+    margin-right:50px;
+    /*min-width:550px;*/
+    display:flex;
+}
+
+.episode-description .ep-title{
+    color:black;
+    border-radius:2px;
+    /*font-size:36px;*/
+    font-size:2vw;
+    font-weight:1000;
     padding-bottom:20px;
 }
 
-.main_content .intro p{
-    text-align:center;
-    /*padding-left:200px;
-    padding-right:200px;*/
-    padding-left:80px;
-    padding-right:80px;
-    line-height: 30px;
-}
+.episode-description .show-notes{
+    color:black;
+    border-radius:2px;
+   
+    /*font-size:21px;*/
+    font-size:2vw;
+    font-weight:500;
     
-.main_content .hosts{
-    display:block;
+    margin-top:10px;
+    line-height: 50px;;
 }
 
-.main_content .hosts h2{
-    /*font-size:35px;*/
-    font-size:25px;
-    text-align:center;
-    padding-bottom:20px;
-    padding-top:20px;
-    background-color: white;
+
+
+.grid .clip-description{
+    color:black;
+    border-radius:2px;
+    padding:4px;
+    font-size:19px;
+    right:5px;
+    font-weight:500;
 }
 
-.hosts .photo-container{
-    /*padding-left:480px;*/
-    align-items:center;
-    justify-content: center;
+.audio{
+    margin-top:80px;
+    min-height: 200px;
+    min-width:200px;
+    margin-left:50px;
+    margin-right:50px;
     display:flex;
-    background-color: white;
 }
 
-.photo-container .dan-rob{
-    width:200px;;
+.audio .iframe{
+    width:100%;
 }
-
-.main_content .hosts p{
-    text-align:center;
-   /* padding-left:200px;
-    padding-right:200px;*/
-    padding-left:80px;
-    padding-right:80px;
-    line-height: 30px;
-    padding-top:20px;
-    background-color: white;
-    padding-bottom:20px;
-}
-
-.main_content .where-to-listen{
-    /*background-color: white;*/
-}
-
-.main_content .where-to-listen h2{
-    /*font-size:35px;*/
-    font-size:25px;
-    text-align:center;
-}
-
-.main_content .where-to-listen p{
-    text-align:center;
-    /*padding-left:200px;
-    padding-right:200px;*/
-    padding-left:80px;
-    padding-right:80px;
-    line-height: 30px;
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-/*.where-to-listen .icon-container{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding:20px;
-}*/
-
-
-/*.icon-container .episode-icon{
-    width:60px;
-}
-
-.icon-container .spotify-icon{
-    width:60px;
-}*/
 
 .social-media{
     width:100%;
@@ -255,5 +243,3 @@ body{
     background-color:rgb(133, 135, 138);
     color:#38B6FF;
 }
-
-/*alter the current github files to match the new format in this file- for the web version, then create a new mobile version of the website with a dropdown menu*/
