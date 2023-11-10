@@ -175,15 +175,13 @@ body{
 
 .wrapper .main_content{
     width:100%;
-    padding-top:70px;
+    padding-top:90px;
     /*padding-left:200px;*/
     /*padding-top:100px;*/
 }
 
 .wrapper .main_content .header {
-    padding-top:55px;
-    padding-bottom:55px;
-    /*padding-left:20px;*/
+    padding-left:20px;
     background:#fff;
    
     border-bottom: 1px solid #e0e4e8;
@@ -192,8 +190,7 @@ body{
 
     color:black;
 
-    /*font-size:35px;*/
-    font-size:25px;
+    font-size:22px;
 }
 
 .wrapper .main_content .grid{
@@ -210,7 +207,7 @@ body{
 
 .main_content .intro h2{
     /*font-size:35px;*/
-    font-size:25px;
+    font-size:22px;
     text-align:center;
     padding-bottom:20px;
 }
@@ -357,6 +354,27 @@ body{
     }
     .space-between-right{
         display:none;
+    }
+    .wrapper .main_content .header{
+        font-size:15px;
+    }
+    .grid .intro h2{
+        font-size:15px;
+    }
+    .intro p{
+        font-size:12px;
+    }
+    .grid .hosts h2{
+        font-size:15px;
+    }
+    .hosts p{
+        font-size: 12px;
+    }
+    .grid .where-to-listen h2{
+        font-size: 15px;
+    }
+    .where-to-listen p{
+        font-size:12px;
     }
 }
 /*alter the current github files to match the new format in this file- for the web version, then create a new mobile version of the website with a dropdown menu*/
