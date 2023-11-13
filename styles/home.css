@@ -233,16 +233,20 @@ body{
 
 .spot-header{
     padding-bottom:49px;
+    color:black;
+    text-align: center;
 }
 
 .apple-header{
     padding-bottom:24px;
     color:black; 
+    text-align: center;
 }
 
 .youtube-header{
     padding-bottom:15px;
     color:black;
+    text-align: center;
 }
 
 .spotify-logo-container{
