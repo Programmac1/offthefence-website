@@ -232,13 +232,13 @@ body{
 }
 
 .spot-header{
-    padding-bottom:49px;
+    padding-bottom:20px;
     color:black;
     text-align: center;
 }
 
 .apple-header{
-    padding-bottom:24px;
+    padding-bottom:20px;
     color:black; 
     text-align: center;
 }
@@ -415,9 +415,13 @@ body{
         background-color: 
     }
     
-    .spotify-header{
-        padding-bottom:25px;
+    .spot-header{
+        padding-bottom:49px;
         color:black;
+    }
+
+    .apple-header{
+        padding-bottom: 25px;
     }
     
     .youtube-header{
