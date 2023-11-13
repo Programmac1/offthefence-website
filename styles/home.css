@@ -216,14 +216,14 @@ body{
     width:100%;
     height:auto;
     background-color: white;
-    display:inline-block;
 }
 
 .listen-container .platform-container{
     display:flex;
     width:100%;
-    justify-content:space-between;
-    padding: 0px 200px;
+    padding-left:128px;
+    padding-right:100px;
+    justify-content: center;
 }
 
 .a-wrap{
@@ -231,9 +231,13 @@ body{
     background-color: 
 }
 
-.spotify-header{
-    padding-bottom:15px;
-    color:black;
+.spot-header{
+    padding-bottom:49px;
+}
+
+.apple-header{
+    padding-bottom:24px;
+    color:black; 
 }
 
 .youtube-header{
@@ -304,7 +308,8 @@ body{
     background-color:rgb(133, 135, 138);
     color:#38B6FF;
 }
-}
+
+
 
 @media (min-width: 767px){
     .mobile-nav{
@@ -391,15 +396,14 @@ body{
         width:100%;
         height:auto;
         background-color: white;
-        display:inline-block;
     }
     
     .listen-container .platform-container{
         display:flex;
         width:100%;
-        justify-content:space-between;
-        padding: 0px 10px;
-        text-align: center;
+        padding-left:120px;
+        padding-right:100px;
+        justify-content: center;
     }
     
     .a-wrap{
