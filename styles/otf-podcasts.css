@@ -368,6 +368,19 @@ body{
     
     }
 
+    .wrapper .main_content .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap:16px;
+        row-gap:40px;
+        padding-left:20px;
+        padding-top:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+    }
+
+    .video-preview {}
+
     .video-preview .video-info-container{
         display:block;
         text-align: center;
@@ -379,15 +392,15 @@ body{
         color:black;
         border-radius:2px;
         padding:4px;
-        font-size:10px;
+        font-size:15px;
         right:5px;
         font-weight:bold;
-        padding-top:3px;
-        height:50px;
+        padding-top:20px;
+        height:60px;
     }
 
     .audio-bar{
-        width: 100px;
+        width: 350px;
     }
     
 }
