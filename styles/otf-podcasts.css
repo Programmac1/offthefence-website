@@ -367,5 +367,27 @@ body{
         
     
     }
+
+    .video-preview .video-info-container{
+        display:block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-info-container .video-info{
+        color:black;
+        border-radius:2px;
+        padding:4px;
+        font-size:10px;
+        right:5px;
+        font-weight:bold;
+        padding-top:3px;
+        height:50px;
+    }
+
+    .audio-bar{
+        width: 100px;
+    }
     
 }
