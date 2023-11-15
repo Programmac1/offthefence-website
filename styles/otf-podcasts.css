@@ -34,6 +34,12 @@ body{
     background-color: rgba(88, 71, 26, 0.2);
     display:flex;
     height:70px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar.scrolled{
+    background-color: #38B6FF;
+    opacity:0.98;
 }
 
 .logo-container{
@@ -250,13 +256,25 @@ body{
     right:5px;
 }
 
+.video-preview .video-info-container{
+    display:block;
+}
+
 .video-preview .video-info{
     color:black;
     border-radius:2px;
     padding:4px;
-    font-size:19px;
+    font-size:15px;
     right:5px;
-    font-weight:500;
+    font-weight:bold;
+    padding-top:14px;
+    text-align: center;
+    display:block;
+}
+
+.video-info-container .audio{
+    display:block;
+    text-align: center;
 }
 
 .social-media{
