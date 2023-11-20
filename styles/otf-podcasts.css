@@ -38,8 +38,18 @@ body{
 }
 
 .navbar.scrolled{
-    background-color: #38B6FF;
+    background-color: #41C1BA;
     opacity:0.98;
+}
+
+.navbar.mobile{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color: #41C1BA;
+    display:flex;
+    height:70px;
+    
 }
 
 .logo-container{
@@ -74,9 +84,11 @@ body{
     padding-top:25px;
 }
 
+
+
 .navbar .navbar-blocks-content:hover{
     background-color: white;
-    color:grey;
+    color:#5271ff;
 }
 
 
@@ -131,7 +143,7 @@ body{
     width:100%;
     min-height:100vh;
     z-index:98;
-    background-color: /*#38B6FF;*/ rgb(196, 197, 200);
+    background-color: /*#38B6FF;*/ white;
     padding-top:120px;
     opacity:97%;
 }
@@ -149,14 +161,15 @@ body{
     text-align:center;
     margin-bottom:16px;
     padding:12px;
-    background-color: #38B6FF;
+    background-color: #5271ff;
     text-decoration:none;
     color:white;
 }
 
 .mobile-nav a:hover{
-    background-color: rgb(138, 169, 180);;
+    background-color: #41C1BA
 }
+
 
 /*.navbar .social-icon-block{
    width:60px;
@@ -297,7 +310,7 @@ body{
 
 }
 
-.social-media-icons .smi-content{
+.smi-content{
     display:block;
     color:white;
     text-align: center;
@@ -306,9 +319,9 @@ body{
     padding-top:25px;
 }
 
-.social-media-block .social-media-icons .fa-brands:hover{
+.social-media-block .fa-brands:hover{
     background-color:rgb(133, 135, 138);
-    color:#38B6FF;
+    color:#41C1BA;
 }
 
 @media (min-width: 767px){

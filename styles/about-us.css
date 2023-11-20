@@ -32,10 +32,28 @@ body{
     list-style-type:none;
     margin:0;
     padding:0;
-    background-color: #38B6FF;
+    background-color: rgb(56, 182, 255, 0.2);
     display:flex;
     height:70px;
+    transition: background-color 0.5s ease;
 }
+
+.navbar.scrolled{
+    background-color: #41C1BA;
+    opacity:0.98;
+}
+
+.navbar.mobile{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color: #41C1BA;
+    display:flex;
+    height:70px;
+    
+}
+
+
 
 .logo-container{
    /* width:240px;*/
@@ -69,9 +87,10 @@ body{
     padding-top:25px;
 }
 
+
 .navbar .navbar-blocks-content:hover{
     background-color: white;
-    color:grey;
+    color:#5271ff;
 }
 
 
@@ -127,7 +146,7 @@ body{
     width:100%;
     min-height:100vh;
     z-index:98;
-    background-color: /*#38B6FF;*/ rgb(196, 197, 200);
+    background-color: /*#38B6FF;*/ white;
     padding-top:120px;
     opacity:97%;
 }
@@ -145,14 +164,15 @@ body{
     text-align:center;
     margin-bottom:16px;
     padding:12px;
-    background-color: #38B6FF;
+    background-color: #5271ff;
     text-decoration:none;
     color:white;
 }
 
 .mobile-nav a:hover{
-    background-color: rgb(138, 169, 180);;
+    background-color: #41C1BA
 }
+
 
 /*.navbar .social-icon-block{
    width:60px;
@@ -175,125 +195,111 @@ body{
 
 .wrapper .main_content{
     width:100%;
-    padding-top:90px;
-    /*padding-left:200px;*/
-    /*padding-top:100px;*/
 }
 
-.wrapper .main_content .header {
-    padding-left:20px;
-    background:#fff;
-   
-    border-bottom: 1px solid #e0e4e8;
-    font-weight: bold;
-    text-align:center;
-
-    color:black;
-
-    font-size:22px;
-}
-
-.wrapper .main_content .grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap:16px;
-    row-gap:20px;
-    padding-top:20px;
-}
-
-.main_content .intro{
-    display:block;
-}
-
-.main_content .intro h2{
-    /*font-size:35px;*/
-    font-size:22px;
-    text-align:center;
-    padding-bottom:20px;
-}
-
-.main_content .intro p{
-    text-align:center;
-    /*padding-left:200px;
-    padding-right:200px;*/
-    padding-left:80px;
-    padding-right:80px;
-    line-height: 30px;
-}
+.main_content .banner{
+    /*width:100%;
+    height:700px;;
+    position:relative;
+    background-image: url('blue-mountains-fence.JPG');
+    overflow: hidden;*/
     
-.main_content .hosts{
-    display:block;
+    width: 100%;
+    height: 600px;
+    background-image: url('blue-mountains-fence.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
-.main_content .hosts h2{
-    /*font-size:35px;*/
-    font-size:25px;
-    text-align:center;
-    padding-bottom:20px;
-    padding-top:20px;
-    background-color: white;
-}
-
-.hosts .photo-container{
-    /*padding-left:480px;*/
-    align-items:center;
+.intro-container{
+    width:100%;
     justify-content: center;
-    display:flex;
-    background-color: white;
-}
-
-.photo-container .dan-rob{
-    width:200px;;
-}
-
-.main_content .hosts p{
     text-align:center;
-   /* padding-left:200px;
-    padding-right:200px;*/
-    padding-left:80px;
-    padding-right:80px;
-    line-height: 30px;
-    padding-top:20px;
-    background-color: white;
-    padding-bottom:20px;
+    position:absolute;
+    margin-top:400px;
+    background-color: rgb(56, 182, 255, 0);
 }
 
-.main_content .where-to-listen{
-    /*background-color: white;*/
+.intro-container .hello{
+    font-size:40px;
+    color:white;
+    padding-bottom: 15px;;
 }
 
-.main_content .where-to-listen h2{
-    /*font-size:35px;*/
+.intro-container .intro-text{
+    font-size:30px;
+    color:white;
+}
+
+.sections-wrap{
+    height:600px;
+    background-image: url('melbourne-river.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.two-hosts-wrapper{
+    display:flex;
+    width:100%;
+    height:200px;
+}
+
+.about-wrapper{
+    width:50%;
+    background-color: rgba(7, 53, 79, 0.6);
+    color:white
+}
+
+.your-hosts-header{
     font-size:25px;
-    text-align:center;
+    display: block;
+    text-align: center;
+    padding-top:15px;
 }
 
-.main_content .where-to-listen p{
-    text-align:center;
-    /*padding-left:200px;
-    padding-right:200px;*/
-    padding-left:80px;
-    padding-right:80px;
-    line-height: 30px;
-    padding-top:20px;
-    padding-bottom:20px;
+.hosts-description{
+    display: block;
+    font-size:20px;
+    padding: 15px 60px;
+    line-height:25px;
+    font-weight: 500;
+    text-align: center;
 }
 
-/*.where-to-listen .icon-container{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding:20px;
-}*/
-
-
-/*.icon-container .episode-icon{
-    width:60px;
+.image-wrapper{
+    width: 50%;
+    height: 200px;
+   /* background-image: url('sydney-duo.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;*/
 }
 
-.icon-container .spotify-icon{
-    width:60px;
-}*/
+.image-wrapper-2{
+    width: 50%;
+    height: 200px;
+    /*background-image: url('podcast-mic.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;*/
+}
+
+.image-wrapper-3{
+    width: 50%;
+    height: 200px;
+   /* background-image: url('spotify-and-apple.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;*/
+}
+
 
 .social-media{
     width:100%;
@@ -306,28 +312,23 @@ body{
     padding:0;
     background-color: rgb(133, 135, 138);
     display:flex;
-    height:70px;
     justify-content: center;
 }
 
-.social-media-icons{
-    width:60px;
 
-}
-
-.social-media-icons .smi-content{
-    display:block;
+.smi-content{;
     color:white;
-    text-align: center;
+    align-items:center;
     text-decoration:none;
-    height:70px;
-    padding-top:25px;
+    padding:25px;
 }
 
-.social-media-block .social-media-icons .fa-brands:hover{
+.social-media-block .fa-brands:hover{
     background-color:rgb(133, 135, 138);
-    color:#38B6FF;
+    color:#41C1BA;
 }
+
+
 
 @media (min-width: 767px){
     .mobile-nav{
@@ -376,5 +377,135 @@ body{
     .where-to-listen p{
         font-size:12px;
     }
+    /*.cover-image .title{
+        font-size:20px;
+        color:white
+    }*/
+
+    .main_content .banner{
+        /*width:100%;
+        height:700px;;
+        position:relative;
+        background-image: url('blue-mountains-fence.JPG');
+        overflow: hidden;*/
+        
+        width: 100%;
+        height:600px;;
+        background-image: url('blue-mountains-fence-2.JPG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    .intro-container .hello{
+        font-size:25px;
+        color:white;
+        padding-bottom: 2px;
+    }
+    
+    .intro-container .intro-text{
+        font-size:18px;
+        color:white;
+        font-weight:bold;
+        padding:25px;
+    }
+
+    .sections-wrap{
+        height:600px;
+        background-image: url('melbourne-river.JPG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    
+    .two-hosts-wrapper{
+        display:flex;
+        width:100%;
+        height:200px;
+    }
+    
+    .about-wrapper{
+        width:50%;
+        background-color: rgba(7, 53, 79, 0.6);
+        color:white
+    }
+    
+    .your-hosts-header{
+        font-size:10px;
+        display: block;
+        text-align: center;
+        padding-top:15px;
+    }
+    
+    .hosts-description{
+        display: block;
+        font-size:7px;
+        padding: 15px 60px;
+        line-height:15px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .image-wrapper{
+        width: 50%;
+        height: 200px;
+       /* background-image: url('sydney-duo.JPG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;*/
+    }
+    
+    .image-wrapper-2{
+        width: 50%;
+        height: 200px;
+        /*background-image: url('podcast-mic.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;*/
+    }
+    
+    .image-wrapper-3{
+        width: 50%;
+        height: 200px;
+       /* background-image: url('spotify-and-apple.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;*/
+    }
+
+
+    
+    .social-media{
+        width:100%;
+        bottom:0;
+    }
+    
+    .social-media-block{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        background-color: rgb(133, 135, 138);
+        display:flex;
+        justify-content: center;
+    }
+
+    
+    .smi-content{;
+        color:white;
+        align-items:center;
+        text-decoration:none;
+        padding:25px;
+    }
+    
+    .social-media-block .fa-brands:hover{
+        background-color:rgb(133, 135, 138);
+        color:#41C1BA
+    }
+    
 }
 /*alter the current github files to match the new format in this file- for the web version, then create a new mobile version of the website with a dropdown menu*/

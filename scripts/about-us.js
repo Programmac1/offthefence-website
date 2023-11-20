@@ -10,8 +10,6 @@ menu_button.addEventListener('click', function (){
 
 //
 
-//
-
 document.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const navbar = document.querySelector('.navbar');
