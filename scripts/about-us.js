@@ -10,7 +10,7 @@ menu_button.addEventListener('click', function (){
 
 //
 
-document.addEventListener('scroll', function () {
+/*document.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const navbar = document.querySelector('.navbar');
 
@@ -19,7 +19,16 @@ document.addEventListener('scroll', function () {
     }else {
         navbar.classList.remove('scrolled');
     }
-})
+});*/
+
+window.addEventListener('resize', () => {
+    const backgImage = document.getElementById('background');
+    if(window.innerWidth < 767) {
+        backgImage.src = 'images/blue-mountains-fence-mobile.jpg';
+    }else{
+        backgImage.src = 'images/blue-mountains-resized-2.jpg'
+    }
+});
 
 /* ChatGPT: In this corrected code:
 

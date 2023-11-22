@@ -406,13 +406,13 @@ body{
     }
 
     .intro-container .hello{
-        font-size:25px;
+        font-size:40px;
         color:white;
         padding-bottom: 10px;
     }
     
     .intro-container .intro-text{
-        font-size:12px;
+        font-size:15px;
         color:white;
         font-weight:bold;
         padding:10px;
