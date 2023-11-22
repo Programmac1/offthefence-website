@@ -51,7 +51,7 @@ function updateImageSrc() {
     const windowWidth = window.innerWidth;
 
     if(windowWidth < 767) {
-        backgImage.src = 'images/blue-mountains-fence-mobile.jpg';
+        backgImage.src = 'images/blue-mountains-fence-mobile.JPG';
     }else {
         backgImage.src = 'images/blue-mountains-resized-2.jpg';
     }
