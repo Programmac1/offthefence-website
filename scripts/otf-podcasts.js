@@ -15,11 +15,23 @@ menu_button.addEventListener('click', function (){
 document.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const navbar = document.querySelector('.navbar');
+    const navbarBlocksContent = document.querySelector('.navbar-blocks-content');
+    const navbarBlocksContent2 = document.querySelector('.navbar-blocks-content-2');
+    const navbarBlocksContent3 = document.querySelector('.navbar-blocks-content-3');
+    
 
-    if(scrollPosition > 400) {
+    if(scrollPosition > 370) {
         navbar.classList.add('scrolled');
+        navbarBlocksContent.classList.add('scrolled');
+        navbarBlocksContent2.classList.add('scrolled');
+        navbarBlocksContent3.classList.add('scrolled');
+        
     }else {
         navbar.classList.remove('scrolled');
+        navbarBlocksContent.classList.remove('scrolled');
+        navbarBlocksContent2.classList.remove('scrolled');
+        navbarBlocksContent3.classList.remove('scrolled');
+      
     }
 })
 
