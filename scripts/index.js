@@ -51,7 +51,7 @@ function updateImageSrc() {
     const windowWidth = window.innerWidth;
 
     if(windowWidth < 767) {
-        backgImage.src = 'images/fireplace-mobile.jpg';
+        backgImage.src = 'images/brick-wallpaper-on-fireplace.jpg';
     }else {
         backgImage.src = 'images/thumbnail-template-resized.jpg';
     }

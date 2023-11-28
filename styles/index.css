@@ -263,15 +263,25 @@ body{
 
 .hello{
     font-size:40px;
-    color:white;
     padding-bottom:30px;
+    color: #ED6D1C;
+    text-shadow: 
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black,
+    1px 1px 1px black;
 }
 
 .intro-text{
     font-size:20px;
-    color:white;
     line-height:0px;
     padding-bottom: 40px;
+    color: white;
+    text-shadow: 
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black,
+    1px 1px 1px black;
 }
 
 .about-us-1{
@@ -395,10 +405,12 @@ body{
     
 
     .intro-container{
-        margin-top:300px;
+        margin-top:0px;
         font-size:20px;
         font-weight: 500;
-        padding:4rem;
+        padding-top:100px;
+        padding-left:60px;
+        padding-right:60px;
         color: #6D3918;
         
         text-align: center;
@@ -407,11 +419,22 @@ body{
 
     .hello{
         font-size:35px;
-        color:#ED6D1C;
+        color: #ED6D1C;
+        text-shadow: 
+        -1px -1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black,
+        1px 1px 1px black;
     }
     
     .intro-text{
         line-height: 20px;
+        color: white;
+        text-shadow: 
+        -1px -1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black,
+        1px 1px 1px black;
     }
   
     
