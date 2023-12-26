@@ -62,6 +62,19 @@ updateImageSrc();
 window.addEventListener('resize', updateImageSrc);
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var banner = document.querySelector(".header");
+    var videoBanner = document.querySelector("#background");
 
+    function updateParallax() {
+        var scrollPosition = window.scrollY;
+        videoBanner.style.transform = "translate3d(0, " + scrollPosition * 0.5 + "px, 0)";
+    }
+
+    window.addEventListener("scroll", updateParallax);
+    window.addEventListener("resize", updateParallax);
+
+    updateParallax(); // Initial call to set parallax effect on page load
+});
 
 
