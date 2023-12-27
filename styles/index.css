@@ -39,8 +39,9 @@ body{
 
 .nav-wrap{
     width:100%;
-    /*position:fixed;*/
-    /*z-index:100;*/
+    position:absolute;
+    z-index:100;
+    /*added position absolute and re added z index to ensure nav-mobile menu can be toggled off*/
 }
 
 .navbar{
